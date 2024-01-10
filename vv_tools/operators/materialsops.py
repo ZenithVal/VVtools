@@ -23,7 +23,7 @@ class VVTools_OT_RemoveUnusedMaterials(Operator):
         for i, mat_slot in reversed(list(enumerate(obj.material_slots))):
             if i not in used_materials:
                 obj.active_material_index = i
-                bpy.ops.object.material_slot_remove({'object': obj})
+                bpy.ops.object.material_slot_remove()
                 removed_count += 1
 
         return removed_count
