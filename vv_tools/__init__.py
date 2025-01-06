@@ -77,12 +77,12 @@ modules = [
 
 class DemoUpdaterPanel(bpy.types.Panel):
 	"""Panel to demo popup notice and ignoring functionality"""
-	bl_label = "Updater Demo Panel"
+	bl_label = "Updater"
 	bl_idname = "OBJECT_PT_DemoUpdaterPanel_hello"
 	bl_space_type = 'VIEW_3D'
 	bl_region_type = 'TOOLS' if bpy.app.version < (2, 80) else 'UI'
 	bl_context = "objectmode"
-	bl_category = "Tools"
+	bl_category = "VV"
 
 	def draw(self, context):
 		layout = self.layout
